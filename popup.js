@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded",function(){
                     }
                 }
             });
+            taskitem.appendChild(editButton);
 
             
             
