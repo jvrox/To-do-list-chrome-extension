@@ -1,0 +1,116 @@
+/* Set the background gradient */
+body {
+    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    width: 500px;
+    height:600px;
+  }
+  #addtask {
+    background-color: #1CB5E0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  /* Style the input field and button */
+  #taskinput {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    color:black;
+    margin-left: 10px;
+  }
+  .task label {
+    flex-grow: 1;
+    color: black; /* Set the text color to black */
+  }
+  
+ 
+  
+  /* Style the task list */
+  #taskList {
+    color: #fff;
+    list-style-type: none;
+    padding: 5px;
+    font-size:25px;
+  }
+  /* Style for the task item */
+.task {
+  list-style: none;
+  padding: 10px;
+  margin: 0px 0;
+  background-color:#fff; /* Common white background */
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Style for the checkbox */
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style for the label (task text) */
+.task label {
+  flex-grow: 1;
+}
+
+/* Style for the Edit button */
+.editb {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+  
+  
+  #taskList li {
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent background */
+    padding: 8px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 20px;
+  }
+  
+  /* Add this CSS to style completed tasks with a strikethrough */
+.completed {
+  text-decoration: line-through;
+  font-size: 20px;
+  color:#1CB5E0;
+}
+
+/* Style the task list items */
+.task {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  font-size:20px;
+}
+
+/* Style the checkbox */
+.task input[type="checkbox"] {
+  margin-right: 10px;
+  size:20px;
+  align-items: auto;
+}
+
+.editb {
+  /* Add your styles for the Edit button here */
+  background-color: #4ca2af;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin:auto;
+  cursor: pointer;
+}
