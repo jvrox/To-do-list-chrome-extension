@@ -1,13 +1,13 @@
 /* Set the background gradient */
 body {
     background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-    margin: 0;
+    
     padding: 20px;
     font-family: Arial, sans-serif;
     color: #fff;
     width: 500px;
     height:600px;
-  }
+      }
   #addtask {
     background-color: #1CB5E0;
     color: #fff;
@@ -26,7 +26,7 @@ body {
     border-radius: 5px;
     font-size: 20px;
     color:black;
-    margin-left:8%;
+    margin-left: 8%;
   }
   .task label {
     flex-grow: 1;
@@ -41,12 +41,13 @@ body {
     list-style-type: none;
     padding: 5px;
     font-size:25px;
+    
   }
   /* Style for the task item */
 .task {
   list-style: none;
   padding: 10px;
-  margin: 0px 0;
+  margin-left: 0px;
   background-color:#fff; /* Common white background */
   border-radius: 5px;
   display: inline-flex;
@@ -81,6 +82,7 @@ body {
     border-radius: 5px;
     color: #fff;
     font-size: 20px;
+    margin-left: 0px;
   }
   
   /* Add this CSS to style completed tasks with a strikethrough */
@@ -112,5 +114,57 @@ body {
   border: none;
   padding: 5px 10px;
   margin:auto;
+  cursor: pointer;
+}
+.edit-task-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 1;
+  overflow: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.edit-task-modal-content {
+  background-color: #fff; /* Background color for the modal content */
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-task-modal input[type="text"],
+.edit-task-modal button {
+  font-size: 16px;
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.edit-task-modal button {
+  background-color: #1CB5E0; /* Button background color */
+  color: #fff; /* Button text color */
+  cursor: pointer;
+}
+
+/* Style for the close button */
+.edit-task-modal-close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.edit-task-modal-close:hover,
+.edit-task-modal-close:focus {
+  color: black;
+  text-decoration: none;
   cursor: pointer;
 }
