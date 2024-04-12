@@ -1,170 +1,186 @@
-/* Set the background gradient */
 body {
-    background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
-    
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: #fff;
-    width: 500px;
-    height:600px;
-      }
-  #addtask {
-    background-color: #1CB5E0;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 8px 16px;
-    font-size: 25px;
-    cursor: pointer;
-  }
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
   
-  /* Style the input field and button */
-  #taskinput {
-    width: 70%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    color:black;
-    margin-left: 8%;
-  }
-  .task label {
-    flex-grow: 1;
-    color: black; /* Set the text color to black */
-  }
-  
- 
-  
-  /* Style the task list */
-  #taskList {
-    color: #fff;
-    list-style-type: none;
-    padding: 5px;
-    font-size:25px;
-    
-  }
-  /* Style for the task item */
-.task {
-  list-style: none;
-  padding: 10px;
-  margin-left: 0px;
-  background-color:#fff; /* Common white background */
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #fff;
+  width: 500px;
+  height:600px;
+    }
+#addtask {
+  background-color: #1CB5E0;
+  color: #fff;
+  border: none;
   border-radius: 5px;
-  display: inline-flex;
-  align-items: center;
+  padding: 8px 16px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* Style the input field and button */
+#taskinput {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  color:black;
+  margin-left: 8%;
+}
+.task label {
+  flex-grow: 1;
+  color: black; /* Set the text color to black */
+}
+
+
+
+/* Style the task list */
+#taskList {
+  color: #fff;
+  list-style-type: none;
+  padding: 5px;
+  font-size:25px;
+  
+}
+/* Style for the task item */
+.task {
+list-style: none;
+padding: 10px;
+margin-left: 0px;
+background-color:#fff; /* Common white background */
+border-radius: 5px;
+display: inline-flex;
+align-items: center;
 }
 
 /* Style for the checkbox */
 .task input[type="checkbox"] {
-  margin-right: 10px;
+margin-right: 10px;
 }
 
 /* Style for the label (task text) */
 .task label {
-  flex-grow: 1;
+flex-grow: 1;
 }
 
 /* Style for the Edit button */
 .editb {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
+background-color: #4caf50;
+color: white;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
 }
 
-  
-  
-  #taskList li {
-    background-color: rgba(255, 255, 255, 0.2); /* Translucent background */
-    padding: 8px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 20px;
-    margin-left: 0px;
-  }
-  
-  /* Add this CSS to style completed tasks with a strikethrough */
-.completed {
-  text-decoration: line-through;
+.deleteb {
+background-color: red;
+color: white;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+
+
+#taskList li {
+  background-color: rgba(255, 255, 255, 0.2); /* Translucent background */
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  color: #fff;
   font-size: 20px;
-  color:#1CB5E0;
+  margin-left: 0px;
+}
+
+/* Add this CSS to style completed tasks with a strikethrough */
+.completed {
+text-decoration: line-through;
+font-size: 20px;
+color:#1CB5E0;
 }
 
 /* Style the task list items */
 .task {
-  display: flex;
-  align-items: center;
-  margin: 5px;
-  font-size:20px;
+display: flex;
+align-items: center;
+margin: 5px;
+font-size:20px;
 }
 
 /* Style the checkbox */
 .task input[type="checkbox"] {
-  margin-right: 10px;
-  size:20px;
-  align-items: auto;
+margin-right: 10px;
+size:20px;
+align-items: auto;
 }
 
 .editb {
-  /* Add your styles for the Edit button here */
-  background-color: #4ca2af;
-  color: white;
-  border: none;
-  padding: 5px 10px;
-  margin:auto;
-  cursor: pointer;
+/* Add your styles for the Edit button here */
+background-color: #4ca2af;
+color: white;
+border: none;
+padding: 5px 10px;
+margin:auto;
+cursor: pointer;
+}
+.deleteb {
+/* Add your styles for the Edit button here */
+background-color: red;
+color: white;
+border: none;
+padding: 5px 10px;
+margin:auto;
+cursor: pointer;
 }
 .edit-task-modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
-  z-index: 1;
-  overflow: auto;
-  justify-content: center;
-  align-items: center;
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+z-index: 1;
+overflow: auto;
+justify-content: center;
+align-items: center;
 }
 
 .edit-task-modal-content {
-  background-color: #fff; /* Background color for the modal content */
-  padding: 20px;
-  border-radius: 5px;
-  width: 50%;
-  max-width: 400px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: #fff; /* Background color for the modal content */
+padding: 20px;
+border-radius: 5px;
+width: 50%;
+max-width: 400px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .edit-task-modal input[type="text"],
 .edit-task-modal button {
-  font-size: 16px;
-  padding: 10px;
-  margin: 5px;
-  border: none;
-  border-radius: 5px;
+font-size: 16px;
+padding: 10px;
+margin: 5px;
+border: none;
+border-radius: 5px;
 }
 
 .edit-task-modal button {
-  background-color: #1CB5E0; /* Button background color */
-  color: #fff; /* Button text color */
-  cursor: pointer;
+background-color: #1CB5E0; /* Button background color */
+color: #fff; /* Button text color */
+cursor: pointer;
 }
 
 /* Style for the close button */
 .edit-task-modal-close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
+color: #aaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
 }
 
 .edit-task-modal-close:hover,
 .edit-task-modal-close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+color: black;
+text-decoration: none;
+cursor: pointer;
 }
