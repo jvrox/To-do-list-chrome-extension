@@ -43,9 +43,22 @@ document.addEventListener("DOMContentLoaded", function () {
             showEditTaskModal(label, checkbox);
         });
 
+        // Add "delete" button
+        const deleteButton = document.createElement("button");
+        deleteButton.textContent = "Delete";
+        deleteButton.classList.add("deleteb");
+
+        deleteButton.addEventListener("click", function () {
+            // Remove the task item from the task list
+            tasklist.removeChild(taskitem);
+            // Update tasks in storage
+            saveTasksToStorage();
+        });
+
         taskitem.appendChild(checkbox);
         taskitem.appendChild(label);
         taskitem.appendChild(editButton);
+        taskitem.appendChild(deleteButton);
 
         taskitem.classList.add("task");
         if (completed) {
